@@ -25,23 +25,23 @@ monitoring-stack/
 │   └── certs/ (ignore edilir)
 └── .gitignore
 
-## ⚙️ Kurulum
+ ⚙️ Kurulum
 
-# 1. Repo'yu klonla
+ 1. Repo'yu klonla
 git clone https://github.com/musatanriover/container-monitoring-stack.git
 cd container-monitoring-stack
 
-# 2. Gerekli sertifikayı oluştur (eğer yoksa)
+ 2. Gerekli sertifikayı oluştur (eğer yoksa)
 openssl req -x509 -nodes -days 365 \
   -newkey rsa:2048 \
   -keyout nginx-proxy/certs/selfsigned.key \
   -out nginx-proxy/certs/selfsigned.crt \
   -subj "/CN=localhost"
 
-# 3. Docker Compose ile başlat
+ 3. Docker Compose ile başlat
 docker compose up -d
 
-## 🔐 Erişim Bilgileri
+ 🔐 Erişim Bilgileri
 
 | Servis        | Adres                                          | Giriş           |
 | ------------- | ---------------------------------------------- | --------------- |
@@ -52,12 +52,12 @@ docker compose up -d
 
 Tarayıcı sertifika uyarısı verir, çünkü sertifika self-signed'dır. Devam etmek güvenlidir (şifrelenmiş bağlantıdır).
 
-## 📊 Grafana Dashboard
+ 📊 Grafana Dashboard
 
-#Data Source:
+Data Source:
 Prometheus olarak eklenmelidir → http://prometheus:9090
 
-#Hazır Dashboard'lar:
+Hazır Dashboard'lar:
 Node Exporter Full (ID: 1860)
 Docker Monitoring (ID: 193)
 

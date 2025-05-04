@@ -12,22 +12,11 @@ Bu proje, Docker container'larınızı ve sunucunuzu gerçek zamanlı olarak izl
 - [x] 🔒 HTTPS → Self-signed SSL ile şifreli bağlantı
 - [x] 🐳 Tamamı Docker Compose ile ayağa kalkar
 
-# 📂 Klasör Yapısı
-
-monitoring-stack/
-├── docker-compose.yml
-├── prometheus/
-│   └── prometheus.yml
-├── nginx-proxy/
-│   ├── default.conf
-│   ├── .htpasswd
-│   └── certs/ (ignore edilir)
-└── .gitignore
-
 # ⚙️ Kurulum
 
 ## 1. Repo'yu klonla
 git clone https://github.com/musatanriover/container-monitoring-stack.git
+
 cd container-monitoring-stack
 
 ## 2. Gerekli sertifikayı oluştur (eğer yoksa)

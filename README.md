@@ -2,7 +2,7 @@
 
 Bu proje, Docker container'larınızı ve sunucunuzu gerçek zamanlı olarak izleyebileceğiniz bir **monitoring çözümüdür**.
 
-## 🚀 İçerik
+# 🚀 İçerik
 
 - [x] 🔍 Prometheus → metrik toplar
 - [x] 📈 Grafana → grafik & dashboard arayüzü
@@ -12,7 +12,7 @@ Bu proje, Docker container'larınızı ve sunucunuzu gerçek zamanlı olarak izl
 - [x] 🔒 HTTPS → Self-signed SSL ile şifreli bağlantı
 - [x] 🐳 Tamamı Docker Compose ile ayağa kalkar
 
-## 📂 Klasör Yapısı
+# 📂 Klasör Yapısı
 
 monitoring-stack/
 ├── docker-compose.yml
@@ -24,7 +24,7 @@ monitoring-stack/
 │   └── certs/ (ignore edilir)
 └── .gitignore
 
-## ⚙️ Kurulum
+# ⚙️ Kurulum
 
 ## 1. Repo'yu klonla
 git clone https://github.com/musatanriover/container-monitoring-stack.git
